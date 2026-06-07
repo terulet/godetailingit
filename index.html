@@ -244,7 +244,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 .trust-cap{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--silver);font-weight:500;margin-top:.6rem}
 .trust-icon-lg{width:42px;height:42px;color:var(--gold);opacity:.95}
 /* ===== ZONAS DE SERVICIO ===== */
-#zones{background:var(--black);padding:6.5rem 3rem;border-bottom:1px solid rgba(192,154,80,.08)}
+#zones{background:var(--black);padding:5.5rem 3rem;border-bottom:1px solid rgba(192,154,80,.08)}
 .zones-wrap{max-width:1200px;margin:0 auto}
 .zones-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start}
 .zones-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:rgba(192,154,80,.08)}
@@ -299,7 +299,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 .svc-card.featured .svc-btn{color:var(--gold)}
 .svc-btn svg{transition:transform .3s}
 .svc-btn:hover svg{transform:translateX(4px)}
-#ba{background:var(--graphite);padding:8rem 3rem;border-top:1px solid rgba(255,255,255,.03)}
+#ba{background:var(--graphite);padding:6rem 3rem;border-top:1px solid rgba(255,255,255,.03)}
 .ba-wrap{max-width:1200px;margin:0 auto}
 .ba-layout{display:block}
 .ba-layout .section-head{text-align:center;max-width:640px;margin:0 auto 2.5rem}
@@ -332,7 +332,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 .proc-title{font-size:.78rem;letter-spacing:.15em;text-transform:uppercase;color:var(--pearl);font-weight:500;margin-bottom:.9rem}
 .proc-desc{font-size:.78rem;color:var(--dim);line-height:1.75;font-weight:300}
 .proc-gold{width:28px;height:1px;background:var(--gold);margin-bottom:1.5rem}
-#gallery{background:var(--graphite);padding:8rem 3rem;border-top:1px solid rgba(255,255,255,.03)}
+#gallery{background:var(--graphite);padding:5.5rem 3rem;border-top:1px solid rgba(255,255,255,.03)}
 .gallery-wrap{max-width:1200px;margin:0 auto}
 .gallery-intro{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:end;margin-bottom:3.5rem}
 .gallery-note{font-size:.78rem;color:var(--dim);line-height:1.8;font-weight:300;text-align:right}
@@ -397,7 +397,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 .advice-title{font-family:var(--font-display);font-size:clamp(1.6rem,4vw,2.4rem);letter-spacing:.03em;color:var(--pearl);margin-bottom:1rem}
 .advice-text{font-size:.95rem;color:var(--silver);line-height:1.7;max-width:480px;margin:0 auto 2rem}
 /* ===== VÍDEOS SOCIALES (TikTok / Reels) ===== */
-#social{background:var(--obsidian);padding:8rem 3rem;border-top:1px solid rgba(255,255,255,.03)}
+#social{background:var(--obsidian);padding:5.5rem 3rem;border-top:1px solid rgba(255,255,255,.03)}
 .social-wrap{max-width:1200px;margin:0 auto}
 .social-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:1rem;max-width:620px;margin-left:auto;margin-right:auto}
 .social-card{position:relative;aspect-ratio:9/16;border:1px solid rgba(192,154,80,.18);border-radius:10px;overflow:hidden;background:var(--graphite);box-shadow:0 20px 50px -20px rgba(0,0,0,.7);transition:border-color .4s,transform .4s var(--ease-out),box-shadow .4s;display:block;text-decoration:none}
@@ -440,7 +440,7 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 .price-card.highlight .price-btn:hover{background:var(--gold-hi)}
 .pricing-note{text-align:center;margin-top:2.5rem;font-size:.75rem;color:var(--dim);letter-spacing:.04em;font-weight:300}
 /* ===== FAQ ===== */
-#faq{background:var(--graphite);padding:8rem 3rem;border-top:1px solid rgba(255,255,255,.03)}
+#faq{background:var(--graphite);padding:5.5rem 3rem;border-top:1px solid rgba(255,255,255,.03)}
 .faq-wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.4fr;gap:5rem;align-items:start}
 .faq-list{display:flex;flex-direction:column;border-top:1px solid rgba(255,255,255,.07)}
 .faq-item{border-bottom:1px solid rgba(255,255,255,.07)}
@@ -566,6 +566,7 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
 }
 
 </style>
+<!-- Versión 07/06: BA arriba + galería reordenada -->
 </head>
 <body>
 <div id="loader" role="status" aria-label="Cargando">
@@ -637,33 +638,13 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
   <div class="hero-scroll" aria-hidden="true"><div class="scroll-track"><div class="scroll-fill"></div></div><span>Scroll</span></div>
   <div class="hero-badge" aria-hidden="true"><span>Servicio a domicilio</span><span>Roses · Empuriabrava · Figueres</span></div>
 </section>
-<section id="trust" aria-label="Cifras de confianza">
-  <div class="trust-inner">
-    <div class="trust-item reveal" style="--i:0">
-      <div class="trust-num">100<span>+</span></div>
-      <div class="trust-cap">Coches detallados</div>
-    </div>
-    <div class="trust-item reveal" style="--i:1">
-      <div class="trust-num">5,0<span>★</span></div>
-      <div class="trust-cap">Valoración en Google</div>
-    </div>
-    <div class="trust-item reveal" style="--i:2">
-      <svg class="trust-icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
-      <div class="trust-cap">Servicio a domicilio</div>
-    </div>
-    <div class="trust-item reveal" style="--i:3">
-      <div class="trust-num" style="font-size:clamp(1.3rem,2.6vw,1.8rem);letter-spacing:.04em">ALT<br>EMPORDÀ</div>
-      <div class="trust-cap">Roses · Empuriabrava · Figueres</div>
-    </div>
-  </div>
-</section>
 <section id="ba" aria-labelledby="ba-heading">
   <div class="ba-wrap">
     <div class="ba-layout">
       <div class="section-head reveal">
-        <div class="section-kicker"><div class="kicker-dash"></div><span class="kicker-text">Antes &amp; Después</span></div>
+        <div class="section-kicker"><div class="kicker-dash"></div><span class="kicker-text">Trabajos en movimiento</span></div>
         <h2 class="section-title" id="ba-heading">LA DIFERENCIA<br><em>SE VE</em></h2>
-        <p class="ba-text" style="margin-top:1.2rem">Arrastra el control para comparar. El resultado habla por sí solo.</p>
+        <p class="ba-text" style="margin-top:1.2rem">Arrastra el control para comparar antes y después reales. Resultados visibles desde el primer vistazo.</p>
       </div>
       <div class="ba-slider-outer reveal">
         <div class="ba-container" id="baContainer" style="--ba-antes:url('assets/img/ba-bmw-carroceria-antes.jpg');--ba-despues:url('assets/img/ba-bmw-carroceria-despues.jpg')">
@@ -689,6 +670,28 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
     </div>
   </div>
 </section>
+
+<section id="trust" aria-label="Cifras de confianza">
+  <div class="trust-inner">
+    <div class="trust-item reveal" style="--i:0">
+      <div class="trust-num">100<span>+</span></div>
+      <div class="trust-cap">Coches detallados</div>
+    </div>
+    <div class="trust-item reveal" style="--i:1">
+      <div class="trust-num">5,0<span>★</span></div>
+      <div class="trust-cap">Valoración en Google</div>
+    </div>
+    <div class="trust-item reveal" style="--i:2">
+      <svg class="trust-icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+      <div class="trust-cap">Servicio a domicilio</div>
+    </div>
+    <div class="trust-item reveal" style="--i:3">
+      <div class="trust-num" style="font-size:clamp(1.3rem,2.6vw,1.8rem);letter-spacing:.04em">ALT<br>EMPORDÀ</div>
+      <div class="trust-cap">Roses · Empuriabrava · Figueres</div>
+    </div>
+  </div>
+</section>
+
 <section id="services" aria-labelledby="svc-heading">
   <div class="services-wrap">
     <div class="section-head reveal">
@@ -866,15 +869,19 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
       <div class="gallery-note reveal"><p>Fotos reales de trabajos realizados.<br>Síguenos en Instagram para ver más.</p><a href="https://www.instagram.com/godetailingit" target="_blank" rel="noopener">@godetailingit →</a></div>
     </div>
     <div class="gallery-grid">
-      <div class="g-item tall reveal" style="--i:0"><img src="assets/img/galeria-exterior-1.jpg" alt="Trabajo real de detailing exterior realizado por Go Detailing" loading="lazy"></div>
-      <div class="g-item reveal" style="--i:1"><img src="assets/img/galeria-interior-1.jpg" alt="Trabajo real de detailing a domicilio realizado por Go Detailing" loading="lazy"></div>
-      <div class="g-item reveal" style="--i:2"><img src="assets/img/galeria-detalle-1.jpg" alt="Detalle de limpieza profesional realizado por Go Detailing" loading="lazy"></div>
-      <div class="g-item wide reveal" style="--i:3"><img src="assets/img/galeria-carroceria-1.jpg" alt="Resultado real de limpieza exterior y acabado premium" loading="lazy"></div>
-      <div class="g-item reveal" style="--i:4"><img src="assets/img/galeria-ceramico-1.jpg" alt="Detalle interior limpio tras servicio profesional" loading="lazy"></div>
-      <div class="g-item reveal" style="--i:5"><img src="assets/img/galeria-resultado-1.jpg" alt="Resultado real de limpieza interior tras detailing" loading="lazy"></div>
-      <div class="g-item tall reveal" style="--i:6"><img src="assets/img/galeria-proceso-1.jpg" alt="Proceso real de limpieza y detailing de vehículo" loading="lazy"></div>
-      <div class="g-item reveal" style="--i:7"><img src="assets/img/galeria-interior-2.jpg" alt="Trabajo real de Go Detailing a domicilio" loading="lazy"></div>
-      <div class="g-item reveal" style="--i:8"><img src="assets/img/galeria-interior-3.jpg" alt="Vehículo detallado por Go Detailing" loading="lazy"></div>
+      <!-- Exterior / impacto premium -->
+      <div class="g-item tall reveal" style="--i:0"><img src="assets/img/galeria-exterior-1.jpg" alt="Mercedes detallado por Go Detailing con acabado exterior premium" loading="eager"></div>
+      <div class="g-item reveal" style="--i:1"><img src="assets/img/galeria-proceso-1.jpg" alt="Proceso real de lavado y detailing exterior a domicilio" loading="eager"></div>
+      <div class="g-item reveal" style="--i:2"><img src="assets/img/galeria-resultado-1.jpg" alt="Resultado final de vehículo limpio y detallado por Go Detailing" loading="eager"></div>
+
+      <!-- Interior / limpieza real -->
+      <div class="g-item wide reveal" style="--i:3"><img src="assets/img/galeria-detalle-1.jpg" alt="Maletero limpio tras servicio profesional de detailing interior" loading="lazy"></div>
+      <div class="g-item reveal" style="--i:4"><img src="assets/img/galeria-interior-1.jpg" alt="Interior de coche limpiado a fondo por Go Detailing" loading="lazy"></div>
+      <div class="g-item reveal" style="--i:5"><img src="assets/img/galeria-interior-2.jpg" alt="Detalle interior limpio después del servicio de detailing" loading="lazy"></div>
+      <div class="g-item reveal" style="--i:6"><img src="assets/img/galeria-interior-3.jpg" alt="Resultado real de limpieza interior profesional" loading="lazy"></div>
+
+      <!-- Marca / servicio a domicilio -->
+      <div class="g-item tall reveal" style="--i:7"><img src="assets/img/galeria-ceramico-1.jpg" alt="Furgoneta y servicio Go Detailing a domicilio en el Alt Empordà" loading="lazy"></div>
     </div>
     <div class="gallery-ig-label" style="margin-top:2.5rem;"><span>Más en</span><a href="https://www.instagram.com/godetailingit" target="_blank" rel="noopener">Instagram @godetailingit →</a></div>
   </div>
