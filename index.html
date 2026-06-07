@@ -559,6 +559,20 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
   .trust-inner{grid-template-columns:1fr 1fr}
 }
 
+
+/* ===== AJUSTE FINAL GANADOR ===== */
+.hero-benefits{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.25rem;max-width:560px;opacity:0;animation:fadeSlideUp .8s var(--ease-out) 1.05s forwards}
+.hero-benefits span{font-size:.68rem;letter-spacing:.04em;color:var(--ash);border:1px solid rgba(192,154,80,.18);background:rgba(8,8,8,.35);padding:.45rem .72rem;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+#ba{padding-top:6.5rem;padding-bottom:6.5rem}
+#social{padding-top:6.5rem;padding-bottom:6.5rem}
+#trust{padding-top:2.4rem;padding-bottom:2.4rem}
+@media(max-width:768px){
+  .hero-benefits{max-width:330px;margin-top:1rem;gap:.45rem}
+  .hero-benefits span{font-size:.62rem;padding:.42rem .62rem}
+  #ba,#social{padding:4.5rem 1.5rem}
+  #trust{padding:0}
+}
+
 @media (prefers-reduced-motion: reduce){
   html{scroll-behavior:auto}
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
@@ -574,12 +588,12 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
   <div class="loader-pct" id="lpct">000</div>
 </div>
 <div id="drawer" aria-hidden="true">
+  <a href="#ba" onclick="closeDrawer()">Trabajos</a>
+  <a href="#social" onclick="closeDrawer()">Vídeos</a>
   <a href="#services" onclick="closeDrawer()">Servicios</a>
   <a href="#pricing" onclick="closeDrawer()">Precios</a>
   <a href="#reviews" onclick="closeDrawer()">Reseñas</a>
-  <a href="#ba" onclick="closeDrawer()">Trabajos</a>
   <a href="#gallery" onclick="closeDrawer()">Galería</a>
-  <a href="#social" onclick="closeDrawer()">Vídeos</a>
   <a href="#zones" onclick="closeDrawer()">Zonas</a>
   <a href="#faq" onclick="closeDrawer()">FAQ</a>
   <a href="https://wa.me/34694270166" class="gold" onclick="closeDrawer()" target="_blank" rel="noopener">Reservar</a>
@@ -590,12 +604,12 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
     <span class="nav-logo-text">GO <b>.</b> DETAILING</span>
   </a>
   <ul class="nav-links">
+    <li><a href="#ba">Trabajos</a></li>
+    <li><a href="#social">Vídeos</a></li>
     <li><a href="#services">Servicios</a></li>
     <li><a href="#pricing">Precios</a></li>
     <li><a href="#reviews">Reseñas</a></li>
-    <li><a href="#ba">Trabajos</a></li>
     <li><a href="#gallery">Galería</a></li>
-    <li><a href="#social">Vídeos</a></li>
     <li><a href="#zones">Zonas</a></li>
     <li><a href="#faq">FAQ</a></li>
   </ul>
@@ -629,33 +643,19 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
         <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
         Reservar por WhatsApp
       </a>
-      <a href="#gallery" class="btn-ghost">Ver trabajos reales <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      <a href="#ba" class="btn-ghost">Ver antes/después <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4"/></svg></a>
       <a href="tel:+34694270166" class="btn-ghost btn-call">Llamar ahora</a>
     </div>
     <p class="hero-micro"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> Te respondemos en minutos por WhatsApp</p>
+    <div class="hero-benefits" aria-label="Ventajas del servicio">
+      <span>✓ Servicio a domicilio</span>
+      <span>✓ Presupuesto por WhatsApp</span>
+      <span>✓ Productos profesionales</span>
+      <span>✓ Roses · Empuriabrava · Figueres</span>
+    </div>
   </div>
   <div class="hero-scroll" aria-hidden="true"><div class="scroll-track"><div class="scroll-fill"></div></div><span>Scroll</span></div>
   <div class="hero-badge" aria-hidden="true"><span>Servicio a domicilio</span><span>Roses · Empuriabrava · Figueres</span></div>
-</section>
-<section id="trust" aria-label="Cifras de confianza">
-  <div class="trust-inner">
-    <div class="trust-item reveal" style="--i:0">
-      <div class="trust-num">100<span>+</span></div>
-      <div class="trust-cap">Coches detallados</div>
-    </div>
-    <div class="trust-item reveal" style="--i:1">
-      <div class="trust-num">5,0<span>★</span></div>
-      <div class="trust-cap">Valoración en Google</div>
-    </div>
-    <div class="trust-item reveal" style="--i:2">
-      <svg class="trust-icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
-      <div class="trust-cap">Servicio a domicilio</div>
-    </div>
-    <div class="trust-item reveal" style="--i:3">
-      <div class="trust-num" style="font-size:clamp(1.3rem,2.6vw,1.8rem);letter-spacing:.04em">ALT<br>EMPORDÀ</div>
-      <div class="trust-cap">Roses · Empuriabrava · Figueres</div>
-    </div>
-  </div>
 </section>
 <section id="ba" aria-labelledby="ba-heading">
   <div class="ba-wrap">
@@ -686,6 +686,68 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
           </a>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+<section id="social" aria-labelledby="social-heading">
+  <div class="social-wrap">
+    <div class="section-head reveal">
+      <div class="section-kicker"><div class="kicker-dash"></div><span class="kicker-text">Resultados reales</span></div>
+      <h2 class="section-title" id="social-heading">RESULTADOS<br><em>REALES</em></h2>
+      <p class="section-body">Vídeos reales de vehículos trabajados por Go Detailing en Roses, Empuriabrava y Figueres. Proceso, brillo y resultado final sin filtros raros.</p>
+    </div>
+    <div class="social-grid">
+      <a class="social-card reveal" style="--i:0" href="https://www.tiktok.com/@godetailingit" target="_blank" rel="noopener" aria-label="Ver vídeo de la furgoneta en TikTok">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/video/poster-furgoneta.jpg">
+          <source src="assets/video/video-furgoneta.mp4" type="video/mp4">
+        </video>
+        <div class="social-play">
+          <span class="sp-label">Servicio a domicilio</span>
+          <span class="sp-tt"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg> Ver en TikTok</span>
+        </div>
+      </a>
+      <a class="social-card reveal" style="--i:1" href="https://www.tiktok.com/@godetailingit" target="_blank" rel="noopener" aria-label="Ver vídeo del Mercedes en TikTok">
+        <video autoplay muted loop playsinline preload="metadata" poster="assets/video/poster-mercedes.jpg">
+          <source src="assets/video/video-mercedes.mp4" type="video/mp4">
+        </video>
+        <div class="social-play">
+          <span class="sp-label">Sin esperas, sin colas</span>
+          <span class="sp-tt"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg> Ver en TikTok</span>
+        </div>
+      </a>
+    </div>
+    <div class="social-foot reveal">
+      <p style="font-size:.85rem;color:var(--silver);font-weight:300;margin-bottom:.4rem">Subimos vídeos nuevos cada semana. Síguenos para ver todos nuestros trabajos.</p>
+      <div class="social-foot-links">
+        <a href="https://www.tiktok.com/@godetailingit" class="social-btn-lg" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          Ver todos en TikTok
+        </a>
+        <a href="https://www.instagram.com/godetailingit" class="social-btn-lg" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Instagram @godetailingit
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="trust" aria-label="Cifras de confianza">
+  <div class="trust-inner">
+    <div class="trust-item reveal" style="--i:0">
+      <div class="trust-num">100<span>+</span></div>
+      <div class="trust-cap">Coches detallados</div>
+    </div>
+    <div class="trust-item reveal" style="--i:1">
+      <div class="trust-num">5,0<span>★</span></div>
+      <div class="trust-cap">Valoración en Google</div>
+    </div>
+    <div class="trust-item reveal" style="--i:2">
+      <svg class="trust-icon-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+      <div class="trust-cap">Servicio a domicilio</div>
+    </div>
+    <div class="trust-item reveal" style="--i:3">
+      <div class="trust-num" style="font-size:clamp(1.3rem,2.6vw,1.8rem);letter-spacing:.04em">ALT<br>EMPORDÀ</div>
+      <div class="trust-cap">Roses · Empuriabrava · Figueres</div>
     </div>
   </div>
 </section>
@@ -758,6 +820,16 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
     <p class="pricing-note">Precios orientativos para turismos. El precio final puede variar según el tamaño y el estado del vehículo. Pulido y tratamientos especiales, a consultar.</p>
   </div>
 </section>
+<section id="advice" aria-labelledby="advice-heading">
+  <div class="advice-box reveal">
+    <h2 class="advice-title" id="advice-heading">¿No sabes qué pack elegir?</h2>
+    <p class="advice-text">Envíanos una foto de tu coche por WhatsApp y te recomendamos la mejor opción, sin compromiso.</p>
+    <a href="https://wa.me/34694270166?text=Hola%2C%20os%20env%C3%ADo%20una%20foto%20de%20mi%20coche%20para%20que%20me%20recomend%C3%A9is%20el%20mejor%20pack." class="btn-wa" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Enviar foto por WhatsApp
+    </a>
+  </div>
+</section>
 <section id="why" aria-labelledby="why-heading">
   <div class="why-wrap">
     <div class="section-head reveal" style="text-align:center;max-width:640px;margin:0 auto 3rem">
@@ -771,16 +843,6 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
       <li class="why-item reveal" style="--i:3"><span class="why-check">✓</span><span class="why-text"><b>Fotos reales de trabajos.</b> Todo lo que ves en la web lo hemos hecho.</span></li>
       <li class="why-item reveal" style="--i:4"><span class="why-check">✓</span><span class="why-text"><b>Roses · Empuriabrava · Figueres.</b> Conocemos la zona y a sus clientes.</span></li>
     </ul>
-  </div>
-</section>
-<section id="advice" aria-labelledby="advice-heading">
-  <div class="advice-box reveal">
-    <h2 class="advice-title" id="advice-heading">¿No sabes qué pack elegir?</h2>
-    <p class="advice-text">Envíanos una foto de tu coche por WhatsApp y te recomendamos la mejor opción, sin compromiso.</p>
-    <a href="https://wa.me/34694270166?text=Hola%2C%20os%20env%C3%ADo%20una%20foto%20de%20mi%20coche%20para%20que%20me%20recomend%C3%A9is%20el%20mejor%20pack." class="btn-wa" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-      Enviar foto por WhatsApp
-    </a>
   </div>
 </section>
 <section id="reviews" aria-labelledby="rev-heading">
@@ -842,20 +904,6 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
     </div>
   </div>
 </section>
-<section id="process" aria-labelledby="proc-heading">
-  <div class="process-wrap">
-    <div class="section-head reveal">
-      <div class="section-kicker"><div class="kicker-dash"></div><span class="kicker-text">Cómo funciona</span></div>
-      <h2 class="section-title" id="proc-heading">EL<br><em>PROCESO</em></h2>
-    </div>
-    <div class="process-grid stagger">
-      <div class="proc-step reveal" style="--i:0"><div class="proc-n">01</div><div class="proc-gold"></div><div class="proc-title">Reserva por WhatsApp</div><div class="proc-desc">Cuéntanos el estado de tu vehículo y tu disponibilidad. Te confirmamos fecha y hora en minutos.</div><div class="proc-arrow"></div></div>
-      <div class="proc-step reveal" style="--i:1"><div class="proc-n">02</div><div class="proc-gold"></div><div class="proc-title">Nos desplazamos</div><div class="proc-desc">Llegamos con todo el equipamiento necesario. Trabajamos en tu garaje, parking o calle. Tú no te mueves.</div><div class="proc-arrow"></div></div>
-      <div class="proc-step reveal" style="--i:2"><div class="proc-n">03</div><div class="proc-gold"></div><div class="proc-title">Valoramos el vehículo</div><div class="proc-desc">Al llegar, inspeccionamos el estado del coche y confirmamos el servicio más adecuado para tu caso.</div><div class="proc-arrow"></div></div>
-      <div class="proc-step reveal" style="--i:3"><div class="proc-n">04</div><div class="proc-gold"></div><div class="proc-title">Acabado premium</div><div class="proc-desc">Entregamos el coche impecable. Con el nivel de detalle de un estudio profesional, en la puerta de tu casa.</div></div>
-    </div>
-  </div>
-</section>
 <section id="gallery" aria-labelledby="gal-heading">
   <div class="gallery-wrap">
     <div class="gallery-intro">
@@ -879,45 +927,17 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
     <div class="gallery-ig-label" style="margin-top:2.5rem;"><span>Más en</span><a href="https://www.instagram.com/godetailingit" target="_blank" rel="noopener">Instagram @godetailingit →</a></div>
   </div>
 </section>
-<section id="social" aria-labelledby="social-heading">
-  <div class="social-wrap">
+<section id="process" aria-labelledby="proc-heading">
+  <div class="process-wrap">
     <div class="section-head reveal">
-      <div class="section-kicker"><div class="kicker-dash"></div><span class="kicker-text">En vídeo</span></div>
-      <h2 class="section-title" id="social-heading">NUESTROS TRABAJOS<br><em>EN MOVIMIENTO</em></h2>
-      <p class="section-body">Así dejamos los coches: como recién salidos del concesionario. Mira el proceso real, el brillo y el resultado final.</p>
+      <div class="section-kicker"><div class="kicker-dash"></div><span class="kicker-text">Cómo funciona</span></div>
+      <h2 class="section-title" id="proc-heading">EL<br><em>PROCESO</em></h2>
     </div>
-    <div class="social-grid">
-      <a class="social-card reveal" style="--i:0" href="https://www.tiktok.com/@godetailingit" target="_blank" rel="noopener" aria-label="Ver vídeo de la furgoneta en TikTok">
-        <video autoplay muted loop playsinline preload="metadata" poster="assets/video/poster-furgoneta.jpg">
-          <source src="assets/video/video-furgoneta.mp4" type="video/mp4">
-        </video>
-        <div class="social-play">
-          <span class="sp-label">Servicio a domicilio</span>
-          <span class="sp-tt"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg> Ver en TikTok</span>
-        </div>
-      </a>
-      <a class="social-card reveal" style="--i:1" href="https://www.tiktok.com/@godetailingit" target="_blank" rel="noopener" aria-label="Ver vídeo del Mercedes en TikTok">
-        <video autoplay muted loop playsinline preload="metadata" poster="assets/video/poster-mercedes.jpg">
-          <source src="assets/video/video-mercedes.mp4" type="video/mp4">
-        </video>
-        <div class="social-play">
-          <span class="sp-label">Sin esperas, sin colas</span>
-          <span class="sp-tt"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg> Ver en TikTok</span>
-        </div>
-      </a>
-    </div>
-    <div class="social-foot reveal">
-      <p style="font-size:.85rem;color:var(--silver);font-weight:300;margin-bottom:.4rem">Subimos vídeos nuevos cada semana. Síguenos para ver todos nuestros trabajos.</p>
-      <div class="social-foot-links">
-        <a href="https://www.tiktok.com/@godetailingit" class="social-btn-lg" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-          Ver todos en TikTok
-        </a>
-        <a href="https://www.instagram.com/godetailingit" class="social-btn-lg" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-          Instagram @godetailingit
-        </a>
-      </div>
+    <div class="process-grid stagger">
+      <div class="proc-step reveal" style="--i:0"><div class="proc-n">01</div><div class="proc-gold"></div><div class="proc-title">Reserva por WhatsApp</div><div class="proc-desc">Cuéntanos el estado de tu vehículo y tu disponibilidad. Te confirmamos fecha y hora en minutos.</div><div class="proc-arrow"></div></div>
+      <div class="proc-step reveal" style="--i:1"><div class="proc-n">02</div><div class="proc-gold"></div><div class="proc-title">Nos desplazamos</div><div class="proc-desc">Llegamos con todo el equipamiento necesario. Trabajamos en tu garaje, parking o calle. Tú no te mueves.</div><div class="proc-arrow"></div></div>
+      <div class="proc-step reveal" style="--i:2"><div class="proc-n">03</div><div class="proc-gold"></div><div class="proc-title">Valoramos el vehículo</div><div class="proc-desc">Al llegar, inspeccionamos el estado del coche y confirmamos el servicio más adecuado para tu caso.</div><div class="proc-arrow"></div></div>
+      <div class="proc-step reveal" style="--i:3"><div class="proc-n">04</div><div class="proc-gold"></div><div class="proc-title">Acabado premium</div><div class="proc-desc">Entregamos el coche impecable. Con el nivel de detalle de un estudio profesional, en la puerta de tu casa.</div></div>
     </div>
   </div>
 </section>
