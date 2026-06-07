@@ -8,25 +8,26 @@
 <meta name="keywords" content="detailing Roses, detailing Empuriabrava, detailing Figueres, detailing a domicilio, limpieza coche Roses, lavado coche a domicilio, tratamiento cerámico Alt Empordà, pulido coche Roses, limpieza interior coche Empuriabrava">
 <meta name="robots" content="index, follow">
 <meta name="author" content="Go Detailing">
-<link rel="canonical" href="https://terulet.github.io/godetailinit/">
+<link rel="canonical" href="https://terulet.github.io/godetailingit/">
 <link rel="icon" href="assets/img/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <meta name="theme-color" content="#080808">
 <meta name="format-detection" content="telephone=yes">
 <link rel="preload" as="image" href="assets/img/hero-detailing.jpg">
+<script>document.documentElement.classList.add('js');</script>
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_ES">
 <meta property="og:site_name" content="Go Detailing">
-<meta property="og:url" content="https://terulet.github.io/godetailinit/">
+<meta property="og:url" content="https://terulet.github.io/godetailingit/">
 <meta property="og:title" content="Detailing a domicilio en Roses, Empuriabrava y Figueres | Go Detailing">
 <meta property="og:description" content="Detailing premium a domicilio en Roses, Empuriabrava, Figueres y Alt Empordà. Lavado, interior, exterior, pulido y tratamiento cerámico. Reserva por WhatsApp.">
-<meta property="og:image" content="https://terulet.github.io/godetailinit/assets/img/og-godetailing.jpg">
+<meta property="og:image" content="https://terulet.github.io/godetailingit/assets/img/og-godetailing.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Detailing a domicilio en Roses, Empuriabrava y Figueres | Go Detailing">
 <meta name="twitter:description" content="Detailing premium a domicilio en Roses, Empuriabrava, Figueres y Alt Empordà. Reserva por WhatsApp.">
-<meta name="twitter:image" content="https://terulet.github.io/godetailinit/assets/img/og-godetailing.jpg">
+<meta name="twitter:image" content="https://terulet.github.io/godetailingit/assets/img/og-godetailing.jpg">
 
 <!-- ============================================================
      SCHEMA SEO LOCAL (JSON-LD)
@@ -38,13 +39,13 @@
   "@graph": [
     {
       "@type": ["AutoWash", "LocalBusiness"],
-      "@id": "https://terulet.github.io/godetailinit/#business",
+      "@id": "https://terulet.github.io/godetailingit/#business",
       "name": "Go Detailing",
       "description": "Detailing profesional de coches a domicilio en Roses, Empuriabrava, Figueres y todo el Alt Empordà. Lavado, limpieza interior y exterior, pulido y tratamiento cerámico.",
-      "url": "https://terulet.github.io/godetailinit/",
+      "url": "https://terulet.github.io/godetailingit/",
       "telephone": "+34694270166",
       "email": "GoDetailingit@gmail.com",
-      "image": "https://terulet.github.io/godetailinit/assets/img/hero-detailing.jpg",
+      "image": "https://terulet.github.io/godetailingit/assets/img/hero-detailing.jpg",
       "priceRange": "€€",
       "currenciesAccepted": "EUR",
       "areaServed": [
@@ -89,7 +90,7 @@
     {
       "@type": "Service",
       "serviceType": "Detailing de coches a domicilio",
-      "provider": { "@id": "https://terulet.github.io/godetailinit/#business" },
+      "provider": { "@id": "https://terulet.github.io/godetailingit/#business" },
       "areaServed": { "@type": "AdministrativeArea", "name": "Alt Empordà" },
       "hasOfferCatalog": {
         "@type": "OfferCatalog",
@@ -190,9 +191,10 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 #drawer a{font-family:var(--font-display);font-size:2rem;letter-spacing:.08em;color:var(--pearl);transition:color .3s}
 #drawer a:hover,#drawer a.gold{color:var(--gold)}
 #hero{position:relative;height:100vh;min-height:640px;display:flex;align-items:center;justify-content:flex-start;overflow:hidden}
-.hero-media{position:absolute;inset:0;z-index:0}
-.hero-media img{width:100%;height:100%;object-fit:cover;object-position:center 40%;filter:brightness(.38) saturate(.55);transform:scale(1.04);animation:heroZoom 12s var(--ease-out) forwards}
-.hero-media video{width:100%;height:100%;object-fit:cover;object-position:center 45%;filter:brightness(.42) saturate(.6);transform:scale(1.04);animation:heroZoom 12s var(--ease-out) forwards}
+.hero-media{position:absolute;inset:0;z-index:0;background:#080808 url('assets/img/hero-detailing.jpg') center 45%/cover no-repeat}
+.hero-media img,.hero-media video{position:absolute;inset:0;display:block;width:100%;height:100%;min-width:100%;min-height:100%;object-fit:cover;backface-visibility:hidden}
+.hero-media img{object-position:center 40%;filter:brightness(.38) saturate(.55);transform:scale(1.04);animation:heroZoom 12s var(--ease-out) forwards}
+.hero-media video{object-position:center 45%;filter:brightness(.42) saturate(.6);transform:scale(1.04);animation:heroZoom 12s var(--ease-out) forwards}
 @keyframes heroZoom{to{transform:scale(1)}}
 .hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(8,8,8,.82) 0%,rgba(8,8,8,.35) 60%,transparent 100%),linear-gradient(0deg,rgba(8,8,8,.65) 0%,transparent 45%),radial-gradient(ellipse 70% 80% at 20% 50%,rgba(192,154,80,.05) 0%,transparent 70%)}
 .hero-line{position:absolute;left:3rem;top:0;bottom:0;z-index:2;width:1px;background:linear-gradient(to bottom,transparent,var(--gold) 30%,var(--gold) 70%,transparent);opacity:.25}
@@ -267,12 +269,11 @@ body::after{content:'';position:fixed;inset:0;background-image:url("data:image/s
 .section-title{font-family:var(--font-display);font-size:clamp(2.8rem,5vw,5rem);letter-spacing:.04em;line-height:.95;color:var(--white)}
 .section-title em{font-style:normal;color:var(--gold)}
 .section-body{font-size:.88rem;color:var(--silver);line-height:1.9;font-weight:300;max-width:480px;margin-top:1.2rem}
-.reveal{opacity:0;transform:translateY(32px);transition:opacity .8s var(--ease-out),transform .8s var(--ease-out)}
-.reveal.visible{opacity:1;transform:none}
-.reveal-left{opacity:0;transform:translateX(-28px);transition:opacity .8s var(--ease-out),transform .8s var(--ease-out)}
-.reveal-left.visible{opacity:1;transform:none}
-.reveal-right{opacity:0;transform:translateX(28px);transition:opacity .8s var(--ease-out),transform .8s var(--ease-out)}
-.reveal-right.visible{opacity:1;transform:none}
+.reveal,.reveal-left,.reveal-right{opacity:1;transform:none;transition:opacity .8s var(--ease-out),transform .8s var(--ease-out)}
+.js .reveal{opacity:0;transform:translateY(32px)}
+.js .reveal-left{opacity:0;transform:translateX(-28px)}
+.js .reveal-right{opacity:0;transform:translateX(28px)}
+.js .reveal.visible,.js .reveal-left.visible,.js .reveal-right.visible{opacity:1;transform:none}
 .stagger>*{transition-delay:calc(var(--i,0) * 80ms)}
 #services{background:var(--obsidian);padding:8rem 3rem}
 .services-wrap{max-width:1200px;margin:0 auto}
@@ -606,10 +607,9 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
 <section id="hero" aria-label="Hero">
   <div class="hero-media">
     <!-- Fondo del hero: vídeo en bucle (mudo). La imagen sirve de poster y respaldo. -->
-    <video autoplay muted loop playsinline poster="assets/img/hero-detailing.jpg">
+    <video autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-detailing.jpg" aria-label="Detailing profesional a domicilio en el Alt Empordà">
       <source src="assets/video/hero-detailing.webm" type="video/webm">
       <source src="assets/video/hero-detailing.mp4" type="video/mp4">
-      <img src="assets/img/hero-detailing.jpg" alt="Detailing profesional a domicilio: Mercedes AMG negro pulido a mano en una villa del Alt Empordà">
     </video>
   </div>
   <div class="hero-overlay" aria-hidden="true"></div>
@@ -666,7 +666,7 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
         <p class="ba-text" style="margin-top:1.2rem">Arrastra el control para comparar. El resultado habla por sí solo.</p>
       </div>
       <div class="ba-slider-outer reveal">
-        <div class="ba-container" id="baContainer" style="--ba-antes:url('assets/img/ba-bmw-carroceria-despues.jpg');--ba-despues:url('assets/img/ba-bmw-carroceria-antes.jpg')">
+        <div class="ba-container" id="baContainer" style="--ba-antes:url('assets/img/ba-bmw-carroceria-antes.jpg');--ba-despues:url('assets/img/ba-bmw-carroceria-despues.jpg')">
           <div class="ba-before" id="baBefore"></div>
           <div class="ba-after" id="baAfter"></div>
           <div class="ba-handle" id="baHandle"><div class="ba-handle-btn">⟨⟩</div></div>
@@ -674,11 +674,10 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
           <span class="ba-label r">DESPUÉS</span>
         </div>
         <div class="ba-thumbs">
-          <button class="ba-thumb active" data-antes="assets/img/ba-bmw-carroceria-despues.jpg" data-despues="assets/img/ba-bmw-carroceria-antes.jpg">Carrocería</button>
-          <button class="ba-thumb" data-antes="assets/img/ba-llanta-antes.jpg" data-despues="assets/img/ba-llanta-despues.jpg">Llantas</button>
-          <button class="ba-thumb" data-antes="assets/img/ba-suelo-despues.jpg" data-despues="assets/img/ba-suelo-antes.jpg">Suelo</button>
-          <button class="ba-thumb" data-antes="assets/img/ba-puerta-cuero-antes.jpg" data-despues="assets/img/ba-puerta-cuero-despues.jpg">Puertas</button>
-          <button class="ba-thumb" data-antes="assets/img/ba-maletero-antes.jpg" data-despues="assets/img/ba-maletero-despues.jpg">Maletero</button>
+          <button class="ba-thumb active" data-antes="assets/img/ba-bmw-carroceria-antes.jpg" data-despues="assets/img/ba-bmw-carroceria-despues.jpg">Llantas</button>
+          <button class="ba-thumb" data-antes="assets/img/ba-puerta-cuero-antes.jpg" data-despues="assets/img/ba-puerta-cuero-despues.jpg">Suelo</button>
+          <button class="ba-thumb" data-antes="assets/img/ba-maletero-antes.jpg" data-despues="assets/img/ba-maletero-despues.jpg">Puertas</button>
+          <button class="ba-thumb" data-antes="assets/img/ba-llanta-antes.jpg" data-despues="assets/img/ba-llanta-despues.jpg">Maletero</button>
         </div>
         <div style="text-align:center;margin-top:2rem">
           <a href="https://wa.me/34694270166?text=Hola%2C%20quiero%20reservar%20un%20servicio." class="btn-wa" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:.5rem;">
@@ -867,15 +866,15 @@ footer{background:var(--black);border-top:1px solid rgba(192,154,80,.08);padding
       <div class="gallery-note reveal"><p>Fotos reales de trabajos realizados.<br>Síguenos en Instagram para ver más.</p><a href="https://www.instagram.com/godetailingit" target="_blank" rel="noopener">@godetailingit →</a></div>
     </div>
     <div class="gallery-grid">
-      <div class="g-item tall reveal" style="--i:0"><img src="assets/img/galeria-exterior-1.jpg" alt="Mercedes C63 AMG negro con acabado impecable tras detailing" loading="lazy"></div>
-      <div class="g-item reveal" style="--i:1"><img src="assets/img/galeria-interior-1.jpg" alt="Lavado exterior con espuma activa a domicilio" loading="lazy"></div>
-      <div class="g-item reveal" style="--i:2"><img src="assets/img/galeria-detalle-1.jpg" alt="Llanta deportiva pulida y brillante tras limpieza" loading="lazy"></div>
-      <div class="g-item wide reveal" style="--i:3"><img src="assets/img/galeria-carroceria-1.jpg" alt="Land Rover Defender tras detailing exterior" loading="lazy"></div>
-      <div class="g-item reveal" style="--i:4"><img src="assets/img/galeria-ceramico-1.jpg" alt="Panel de puerta de cuero limpio tras detallado interior" loading="lazy"></div>
-      <div class="g-item reveal" style="--i:5"><img src="assets/img/galeria-resultado-1.jpg" alt="Maletero de SUV impecable tras detailing interior" loading="lazy"></div>
-      <div class="g-item tall reveal" style="--i:6"><img src="assets/img/galeria-proceso-1.jpg" alt="Suelo del conductor limpio tras aspirado profundo" loading="lazy"></div>
-      <div class="g-item reveal" style="--i:7"><img src="assets/img/galeria-interior-2.jpg" alt="Furgoneta rotulada de Go Detailing, detailing a domicilio" loading="lazy"></div>
-      <div class="g-item reveal" style="--i:8"><img src="assets/img/galeria-interior-3.jpg" alt="Jeep Rubicon detallado por dentro y por fuera" loading="lazy"></div>
+      <div class="g-item tall reveal" style="--i:0"><img src="assets/img/galeria-exterior-1.jpg" alt="Trabajo real de detailing exterior realizado por Go Detailing" loading="lazy"></div>
+      <div class="g-item reveal" style="--i:1"><img src="assets/img/galeria-interior-1.jpg" alt="Trabajo real de detailing a domicilio realizado por Go Detailing" loading="lazy"></div>
+      <div class="g-item reveal" style="--i:2"><img src="assets/img/galeria-detalle-1.jpg" alt="Detalle de limpieza profesional realizado por Go Detailing" loading="lazy"></div>
+      <div class="g-item wide reveal" style="--i:3"><img src="assets/img/galeria-carroceria-1.jpg" alt="Resultado real de limpieza exterior y acabado premium" loading="lazy"></div>
+      <div class="g-item reveal" style="--i:4"><img src="assets/img/galeria-ceramico-1.jpg" alt="Detalle interior limpio tras servicio profesional" loading="lazy"></div>
+      <div class="g-item reveal" style="--i:5"><img src="assets/img/galeria-resultado-1.jpg" alt="Resultado real de limpieza interior tras detailing" loading="lazy"></div>
+      <div class="g-item tall reveal" style="--i:6"><img src="assets/img/galeria-proceso-1.jpg" alt="Proceso real de limpieza y detailing de vehículo" loading="lazy"></div>
+      <div class="g-item reveal" style="--i:7"><img src="assets/img/galeria-interior-2.jpg" alt="Trabajo real de Go Detailing a domicilio" loading="lazy"></div>
+      <div class="g-item reveal" style="--i:8"><img src="assets/img/galeria-interior-3.jpg" alt="Vehículo detallado por Go Detailing" loading="lazy"></div>
     </div>
     <div class="gallery-ig-label" style="margin-top:2.5rem;"><span>Más en</span><a href="https://www.instagram.com/godetailingit" target="_blank" rel="noopener">Instagram @godetailingit →</a></div>
   </div>
@@ -1105,8 +1104,22 @@ function toggleDrawer(){
 }
 function closeDrawer(){if(drawerOpen)toggleDrawer();}
 const revealEls=document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}});},{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
-revealEls.forEach(el=>observer.observe(el));
+function showAllReveal(){revealEls.forEach(el=>el.classList.add('visible'));}
+if('IntersectionObserver' in window){
+  const observer=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){
+        e.target.classList.add('visible');
+        observer.unobserve(e.target);
+      }
+    });
+  },{threshold:0.08,rootMargin:'0px 0px -40px 0px'});
+  revealEls.forEach(el=>observer.observe(el));
+  // Seguro anti-pantallazo negro: si una captura de página completa no dispara scroll/observer, el contenido aparece igualmente.
+  setTimeout(showAllReveal,1200);
+}else{
+  showAllReveal();
+}
 (function initBA(){
   const wrap=document.getElementById('baContainer');
   const after=document.getElementById('baAfter');
