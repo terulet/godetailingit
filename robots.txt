@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://terulet.github.io/godetailingit/sitemap.xml
+Sitemap: https://www.godetailing.es/sitemap.xml

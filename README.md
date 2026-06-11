@@ -46,9 +46,27 @@ Consejo: exporta las fotos en JPG, ancho máximo ~1600px y peso < 400 KB cada un
 
 ## Dominio
 
-Todo apunta a `https://www.godetailing.es/`. Si usas otro dominio o la URL de GitHub Pages,
-cambia esa dirección en `index.html` (etiquetas canonical, og:url, og:image y el bloque JSON-LD),
-en `sitemap.xml` y en `robots.txt`.
+Todo apunta a `https://www.godetailing.es/` (canonical, og:url, og:image, JSON-LD,
+`sitemap.xml` y `robots.txt`). El dominio personalizado se fija con el archivo `CNAME`
+de la raíz, que contiene `www.godetailing.es`.
+
+### Conectar el dominio (el dominio está en Hostinger, no en Wix)
+
+En el panel **DNS de Hostinger** para `godetailing.es`:
+
+1. **Borra** el registro **A** del apex que apunta a Wix (`185.230.63.107`) y crea
+   estos 4 registros **A** (host `@`) hacia GitHub Pages:
+   - `185.199.108.153`
+   - `185.199.109.153`
+   - `185.199.110.153`
+   - `185.199.111.153`
+2. Cambia el **CNAME** de `www` de `pointing.wixdns.net` a `terulet.github.io`.
+
+Luego, en GitHub → **Settings → Pages → Custom domain**: `www.godetailing.es` y activa
+**Enforce HTTPS** (el certificado lo emite GitHub automáticamente).
+
+Con los 4 A records, `godetailing.es` (sin www) redirige solo a `www.godetailing.es`.
+Cuando la web nueva funcione, se puede cancelar el plan de Wix sin perder el dominio.
 
 ## Datos de contacto integrados
 
